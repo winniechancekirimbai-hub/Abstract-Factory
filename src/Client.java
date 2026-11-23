@@ -1,18 +1,22 @@
-package AbstractFactory;
 
 public class Client {
     public static  void main(String[] args) {
         IProduitFactory produitFactory1 =new ProduitFactory1();
         IProduitFactory produitFactory2 =new ProduitFactory2();
-        produitA produitA = null;
-        produitB produitB = null;
+
+        ProduitA produitA = null;
+        ProduitB produitB = null;
+
         System.out.println("Utilisation de la premiere fabrique");
-        ProduitA =produitFactory1.getProduitA();
-        ProduitB =produitFactory1.getProduitB();
-        produitA.methode();
-        produitB.methode();
+        produitA =produitFactory1.getProduitA();
+        produitB =produitFactory1.getProduitB();
+        produitA.methodeA();
+        produitB.methodeB();
 
-
-    
+        System.out.println("Utilisation de la deuxieme fabrique");
+        produitA =produitFactory2.getProduitA();
+        produitB =produitFactory2.getProduitB();
+        produitA.methodeA();
+        produitB.methodeB();
 }
 }

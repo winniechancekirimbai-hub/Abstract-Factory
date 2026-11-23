@@ -1,11 +1,4 @@
-package  AbstractFactory;
-
 public interface IProduitFactory {
     public  ProduitA getProduitA();
-    public  ProduitA getProduitB();
-
-
-
-
-    
+    public  ProduitB getProduitB();
 }

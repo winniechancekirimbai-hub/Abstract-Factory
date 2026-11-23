@@ -1,16 +1,15 @@
-package AbstractFactory;
 
 public class ProduitFactory2 implements IProduitFactory {
-    public ProduitA getProduitA(){
-        return new ProduitA2();
-    }
-    public ProduitB getProduit(){
-        return  new ProduitB2();
+
+    @Override
+    public ProduitA getProduitA() {
+         return new ProduitA2();
     }
 
-
+    @Override
+    public ProduitB getProduitB() {
+        return new ProduitB2();
+    }
     
 }
- 
-    
 
